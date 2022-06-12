@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
 const upload = multer({
     storage,
     limits: { fileSize: 1000000 * 100 }
-}).single("file");
+}).single("myfile");
 
 class Files {
     // this function will be used to uplaod file and save data to the database
